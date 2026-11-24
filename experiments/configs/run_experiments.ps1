@@ -7,8 +7,8 @@ param(
     [int]$Payload    = 1024,
     [int]$WarmupSec  = 5,
     [int]$DurationSec = 20,
-    [string]$Server  = "src/server/bin/Release/net8.0/TcpBench.Server.exe",
-    [string]$Gen     = "src/load-generator/bin/Release/net8.0/TcpBench.LoadGen.exe",
+    [string]$Server  = "src/server/bin/Release/net10.0/TcpBench.Server.exe",
+    [string]$Gen     = "src/load-generator/bin/Release/net10.0/TcpBench.LoadGen.exe",
     [string]$OutDir  = "experiments/raw-data"
 )
 

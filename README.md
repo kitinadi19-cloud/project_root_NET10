@@ -1,4 +1,4 @@
-# TCP Echo Benchmark (C# / .NET 8)
+# TCP Echo Benchmark (C# / .NET 10)
 
 Prototype phục vụ bài nghiên cứu: **Khảo sát ảnh hưởng của số lượng Client đồng thời đến hiệu năng TCP Server** (latency, throughput, CPU).
 
@@ -10,7 +10,7 @@ Prototype phục vụ bài nghiên cứu: **Khảo sát ảnh hưởng của s�
 
 ## Yêu cầu môi trường
 
-* [.NET 8 SDK](https://dotnet.microsoft.com/)
+* [.NET 10 SDK](https://dotnet.microsoft.com/)
 * Python 3 (dùng thư viện chuẩn cho `verify.py`)
 * `matplotlib` (chỉ cần để chạy `analyze.py`):
   ```bash
@@ -56,12 +56,12 @@ Mở 2 cửa sổ terminal riêng biệt:
 
 **Terminal 1 — Khởi chạy Server:**
 ```powershell
-src/server/bin/Release/net8.0/TcpBench.Server.exe --port 5000
+src/server/bin/Release/net10.0/TcpBench.Server.exe --port 5000
 ```
 
 **Terminal 2 — Khởi chạy Load Generator (warm-up 5s, đo 20s):**
 ```powershell
-src/load-generator/bin/Release/net8.0/TcpBench.LoadGen.exe --port 5000 `
+src/load-generator/bin/Release/net10.0/TcpBench.LoadGen.exe --port 5000 `
     --clients 10 --payload-bytes 1024 --warmup-s 5 --duration-s 20 `
     --run-id c10_r1 --out experiments/raw-data/summary.csv `
     --raw-out experiments/raw-data/raw_c10_r1.csv --server-name TcpBench.Server
