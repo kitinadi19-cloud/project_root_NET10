@@ -1,5 +1,23 @@
+<<<<<<< HEAD
 **/bin/
 **/obj/
 .vs/
 *.user
 **/TestResults/
+=======
+﻿# .NET
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated experiment data
+experiments/raw-data/*.csv
+>>>>>>> origin/feature/tv5-analysis
