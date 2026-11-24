@@ -203,17 +203,19 @@ def main():
         args.output,
     )
 
+    
     cpu_metric = (
-        "srv_cpu_machine_pct"
-        if "srv_cpu_machine_pct" in metrics
-        else "srv_cpu_core_pct"
+        "srv_cpu_core_pct"
+         if "srv_cpu_core_pct" in metrics
+         else "srv_cpu_machine_pct"
     )
+
 
     plot_metric(
         result,
         cpu_metric,
-        "CPU Usage (%)",
-        "CPU Usage vs Number of Clients",
+        "Server CPU Usage (% of one core)",
+        "Server CPU Usage vs Number of Clients",
         "cpu_vs_clients.png",
         args.output,
     )

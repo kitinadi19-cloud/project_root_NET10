@@ -13,4 +13,3 @@ venv/
 
 # Generated experiment data
 experiments/raw-data/*.csv
-experiments/figures/*.png
