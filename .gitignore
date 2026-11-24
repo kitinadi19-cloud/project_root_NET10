@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 **/bin/
 **/obj/
 .vs/
@@ -6,18 +7,28 @@
 **/TestResults/
 =======
 ﻿# .NET
+=======
+# Build / cache
+>>>>>>> origin/feature/tv6-test
 bin/
 obj/
 .vs/
 *.user
+<<<<<<< HEAD
 *.suo
+=======
+TestResults/
+>>>>>>> origin/feature/tv6-test
 
 # Python
 __pycache__/
 *.pyc
 .venv/
+<<<<<<< HEAD
 venv/
 
 # Generated experiment data
 experiments/raw-data/*.csv
 >>>>>>> origin/feature/tv5-analysis
+=======
+>>>>>>> origin/feature/tv6-test
