@@ -1,0 +1,11 @@
+# Build / cache
+bin/
+obj/
+.vs/
+*.user
+TestResults/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
