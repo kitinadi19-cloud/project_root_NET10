@@ -30,9 +30,9 @@ Prototype phục vụ bài nghiên cứu: **Khảo sát ảnh hưởng của s�
 │   └── load-generator/   # Chương trình tạo tải (TcpBench.LoadGen)
 ├── tests/                # Bộ kiểm thử tự động xUnit (T1–T8)
 ├── experiments/
-│   ├── configs/          # Script chạy thực nghiệm (run\_experiments.ps1)
-│   ├── raw-data/         # Dữ liệu thô (summary.csv, raw\_\*.csv)
-│   ├── analysis/         # Script phân tích (analyze.py) \& kiểm chứng (verify.py)
+│   ├── configs/          # Script chạy thực nghiệm (run_experiments.ps1)
+│   ├── raw-data/         # Dữ liệu thô (summary.csv, raw_*.csv)
+│   ├── analysis/         # Script phân tích (analyze.py) & kiểm chứng (verify.py)
 │   └── figures/          # Biểu đồ (.png) và bảng tổng hợp (aggregate.csv)
 └── docs/                 # Báo cáo PDF
 ```
@@ -77,18 +77,18 @@ src/server/bin/Release/net10.0/TcpBench.Server.exe --port 5000
 ```powershell
 src/load-generator/bin/Release/net10.0/TcpBench.LoadGen.exe --port 5000 `
     --clients 10 --payload-bytes 1024 --warmup-s 5 --duration-s 20 `
-    --run-id c10\_r1 --out experiments/raw-data/summary.csv `
-    --raw-out experiments/raw-data/raw\_c10\_r1.csv --server-name TcpBench.Server
+    --run-id c10_r1 --out experiments/raw-data/summary.csv `
+    --raw-out experiments/raw-data/raw_c10_r1.csv --server-name TcpBench.Server
 ```
 
-*(Trên Linux/macOS: bỏ đuôi `.exe` và dùng `\\` thay cho ```).*
+*(Trên Linux/macOS: bỏ đuôi `.exe` và dùng `\` thay cho ```).*
 
 \---
 
 ## Chạy toàn bộ thí nghiệm (1 / 10 / 50 Client × 3 lần)
 
 ```powershell
-powershell -File experiments/configs/run\_experiments.ps1
+powershell -File experiments/configs/run_experiments.ps1
 ```
 
 \---
